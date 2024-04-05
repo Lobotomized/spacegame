@@ -135,8 +135,8 @@ export abstract class GameElement extends Sprite {
         }
     }
     die(elements:GameElement[], app:Application){
-        elements.splice(elements.indexOf(this),1);
         app.stage.removeChild(this);
+        elements.splice(elements.indexOf(this),1);
     }
 }
 
@@ -151,10 +151,7 @@ export class BadGuy extends GameElement {
     move(){
         this.x -= this.speed;
     }    
-    die(elements:GameElement[], app:Application){
-        elements.splice(elements.indexOf(this),1);
-        app.stage.removeChild(this);
-    }
+
 }
 
 export class Bullet extends GameElement {

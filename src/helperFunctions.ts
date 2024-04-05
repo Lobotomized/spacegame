@@ -52,7 +52,7 @@ export const spawnBadGuys = function(app:Application, elements:GameElement[]){
             currentLevel =levelThree;
             break;  
         default:
-            currentLevel = levelTwo;
+            currentLevel = levelThree;
             break;
     }
 
