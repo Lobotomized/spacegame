@@ -109,4 +109,11 @@ export function interactions(elements:GameElement[], app:Application, player:Pla
             el.die(elements, app);
         }
     })
+
+    //Remove stuck
+    app.stage.children.forEach((el) => {
+        if(!(el instanceof Player) && el instanceof GameElement && elements.indexOf(el) === -1){
+            app.stage.removeChild(el);
+        }
+    })
 }
