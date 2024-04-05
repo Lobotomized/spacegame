@@ -1,0 +1,10 @@
+###
+npm install
+npm run dev
+
+go to port localhost:8080
+
+
+The game has different weapons, different enemies with different mechanics, progress bar and different levels.
+
+It does not save score to localstorage because it has no score but it saves your current level progression. You have to beat level 1 to go to level 2 and level to in order to progress to level 3.
