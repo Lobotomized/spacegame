@@ -128,10 +128,12 @@ export abstract class GameElement extends Sprite {
 
     hit(otherElement:GameElement,elements:GameElement[], app:Application){
         
-        otherElement.hp -= this.damage;
-        otherElement.hitAnimationCounter = 1;
-        if(otherElement.hp <= 0){
-            otherElement.die(elements,app);
+        if(app.stage.children.indexOf(otherElement) != -1){
+            otherElement.hp -= this.damage;
+            otherElement.hitAnimationCounter = 2;
+            if(otherElement.hp <= 0){
+                otherElement.die(elements,app);
+            }
         }
     }
     die(elements:GameElement[], app:Application){
