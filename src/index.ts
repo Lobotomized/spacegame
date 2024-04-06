@@ -176,11 +176,11 @@ const startGame = async () =>
     
     const lineOne = new Graphics()
     .rect(0, 0, app.stage.width,10)
-    .fill('#ffffff');
+    .fill('#160915');
 
     const lineTwo = new Graphics()
     .rect(0, 0, app.stage.width,10)
-    .fill('#ffff55');
+    .fill('#846684');
 
     // Create a new ProgressBar instance
     progress = new ProgressBar({

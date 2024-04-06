@@ -2,15 +2,15 @@ import { BadGuy, EvilAlien, EvilShip, HauntingEvilAlien, MoreEvilAlien, TinyEvil
 
 export const levelOne:(typeof BadGuy)[] = [
     TinyEvilShip,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,
-    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
+    EvilAlien,EvilAlien,EvilAlien, MoreEvilAlien,HauntingEvilAlien,
 ]
 
 
