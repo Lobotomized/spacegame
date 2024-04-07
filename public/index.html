@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script defer src="bundle.js"></script></head>
+    <title>Star Game</title>
+    <link rel="icon" type="image/png" href="assets/enemyShip2.png"/>
+
+    <link rel="stylesheet" href="assets/index.css">
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
-    <h1>hi</h1>
+    <div class="menuContainer">
+        <div class="smallCol">
+            <span>Controls</span>
+            <span> 
+                Left : a
+                Right: d
+                Up: w
+                Down: s
+                Shoot: Space
+    
+            </span>
+        </div>
+
+        <button class="button" id="start">Start</button>
+
+        <div class="smallCol">
+            <span>Select Weapon</span>
+            <div class="row">
+                <label for="">Default Weapon : </label>
+                <input type="radio" name="weapon" value="default">
+            </div>
+
+            <div class="row">
+                <label  for="">Splash Weapon : </label>
+                <input type="radio" name="weapon" value="splash">
+            </div>
+            <div class="row">
+                <label  for="">Big Gun: </label>
+                <input type="radio" name="weapon" value="bigGun">
+            </div>
+            <div class="row">
+                <label  for="">Big Splash Gun: </label>
+                <input type="radio" name="weapon" value="bigSplash">
+            </div>
+        </div>
+    </div>
+
+    <script>
+            let levelCode = localStorage.getItem('currentLevel');
+            if(!levelCode){
+                levelCode = 1;
+            }
+            const button = document.getElementById("start");
+            button.innerText = 'Start level ' + levelCode
+    </script>
 </body>
 </html>

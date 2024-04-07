@@ -1,10 +1,11 @@
+import './styles/index.css'
 import { Application, Assets, Graphics, TilingSprite } from 'pixi.js';
-import { GameElement, Player } from './characters';
-import { counters, interactions, spawnBadGuys, spawnBadGuysConst } from './helperFunctions';
-import { bigGun, bigSplashWeapon, splashWeapon } from './weapons';
+import { GameElement, Player } from './gameLogic/characters';
+import { counters, interactions, spawnBadGuys, spawnBadGuysConst } from './gameLogic/helperFunctions';
+import { bigGun, bigSplashWeapon, splashWeapon } from './gameLogic/weapons';
 import { ProgressBar } from '@pixi/ui';
 
-const activeKeys:string[] = []
+const activeKeys:string[] = []  
 const elements:GameElement[] = []
 let app: Application | null = null;
 let player: Player | null = null;

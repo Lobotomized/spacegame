@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -17,6 +18,10 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
     ],
   },
   resolve: {
@@ -27,6 +32,8 @@ module.exports = {
       title: 'The Game',
       filename: 'index.html',
       template: 'src/template.html'
-    })
+    }),
+    new MiniCssExtractPlugin()
+ 
   ]
 };
