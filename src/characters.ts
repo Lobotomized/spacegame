@@ -6,20 +6,20 @@ let evilAlien : Texture;
 let playerTexture: Texture;
 let enemyShip: Texture;
 
-Assets.load('assets/bullet.png').then((res:Texture) => {
+Assets.load('./assets/bullet.png').then((res:Texture) => {
     bulletTexture = res;
 })
 
 
-Assets.load('assets/evilAlien.png').then((res:Texture) => {
+Assets.load('./assets/evilAlien.png').then((res:Texture) => {
     evilAlien = res;
 })
 
-Assets.load('assets/spaceShip.png').then((res:Texture) => {
+Assets.load('./assets/spaceShip.png').then((res:Texture) => {
     playerTexture = res;
 })
 
-Assets.load('assets/enemyShip.png').then((res:Texture) => {
+Assets.load('./assets/enemyShip.png').then((res:Texture) => {
     enemyShip = res;
 })
 
